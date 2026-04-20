@@ -36,5 +36,5 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 - The site sometimes shows a cookie/consent overlay. `UiHelpers.CloseConsentAsync()` removes it before actions.
 - If a selector becomes flaky because the website changes, adjust only that locator rather than rewriting the whole test.
--For the final submission, zip the project folder or push it to a public GitHub repository, as required by the brief.
--Some test scenarios were marked as ignored due to flaky behavior caused by dynamic overlays and sidebar interactions on the public demo site. The remaining automated scenarios run successfully and cover the core user flows.
+- For the final submission, zip the project folder or push it to a public GitHub repository, as required by the brief.
+- Some test scenarios were marked as ignored due to flaky behavior caused by dynamic overlays and sidebar interactions on the public demo site. The remaining automated scenarios run successfully and cover the core user flows.
