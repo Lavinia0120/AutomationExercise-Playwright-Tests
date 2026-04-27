@@ -38,4 +38,6 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 - If a selector becomes flaky because the website changes, adjust only that locator rather than rewriting the whole test.
 - For the final submission, zip the project folder or push it to a public GitHub repository, as required by the brief.
 - Some test scenarios were marked as ignored due to flaky behavior caused by dynamic overlays and sidebar interactions on the public demo site. The remaining automated scenarios run successfully and cover the core user flows.
-- Additional scenario: invalid login validation to verify error handling for incorrect credentials.
+Additional scenarios implemented:
+- Invalid login validation (negative testing)
+- Search for non-existing product using dynamic data (GUID)
