@@ -193,5 +193,22 @@ public async Task Extra_InvalidLogin_ShowsErrorMessage()
         await Expect(Page.GetByText("Your email or password is incorrect!", new() { Exact = false }))
             .ToBeVisibleAsync();
     }
+    [Test]
+public async Task Extra_Search_NonExistingProduct_ReturnsNoResults()
+{
+    await Page.GotoAsync("https://automationexercise.com/products");
+    await UiHelpers.CloseConsentAsync(Page);
+
+    string uniqueSearchTerm = "NoProduct_" + Guid.NewGuid().ToString("N");
+
+    await Page.Locator("input[id='search_product']").FillAsync(uniqueSearchTerm);
+    await Page.Locator("button[id='submit_search']").ClickAsync();
+
+    await Expect(Page.GetByText("Searched Products", new() { Exact = false }))
+        .ToBeVisibleAsync();
+
+    await Expect(Page.Locator(".features_items .product-image-wrapper"))
+        .ToHaveCountAsync(0);
+}
 }
 }
