@@ -1,4 +1,4 @@
-# Automation Exercise - Playwright C# Internship Starter Project
+# Automation Exercise - Playwright C# Quest Global Internship 
 
 This project is a strong starter for the internship brief. It covers **10 existing scenarios** from the public test-case list and includes **1 bonus scenario**.
 
