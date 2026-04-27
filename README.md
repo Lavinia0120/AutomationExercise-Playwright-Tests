@@ -15,6 +15,8 @@ This project is a strong starter for the internship brief. It covers **10 existi
 9. Test Case 17 - Remove Products From Cart
 10. Test Case 18 - View Category Products
 11. Bonus - Test Case 19 - View & Cart Brand Products
+12. Extra - Invalid Login (negative scenario)
+13. Extra - Search for non-existing product (dynamic data using GUID)
 
 ## Setup
 
