@@ -5,6 +5,7 @@
 - .NET 10
 - Microsoft Playwright
 - NUnit
+
 This project is a strong starter for the internship brief. It covers **10 existing scenarios** from the public test-case list and includes additional bonus scenarios for extended coverage.
 
 ## Included automated scenarios
