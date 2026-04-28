@@ -41,8 +41,8 @@ It implements a selected set of test cases from the public test-case list, along
 
 Additionally, the following extra automated scenarios were implemented as part of the optional requirements:
 
-20. Extra - Invalid Login (negative scenario)
-21. Extra - Search for non-existing product (dynamic data using GUID)
+19. Extra - Invalid Login (negative scenario)
+20. Extra - Search for non-existing product (dynamic data using GUID)
 
 ## Setup
 
