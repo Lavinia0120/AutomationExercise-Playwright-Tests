@@ -108,4 +108,18 @@ private async Task CreateAccountAsync(string email, string password)
 
     await Page.Locator("a[data-qa='continue-button']").ClickAsync();
 }
+[Test]
+public async Task TC22_AddToCartFromRecommendedItems_Works()
+{
+    await UiHelpers.ScrollToFooterAsync(Page);
+
+    await Expect(Page.GetByText("Recommended Items", new() { Exact = false }))
+        .ToBeVisibleAsync();
+
+    await Page.Locator(".recommended_items a[data-product-id]").First.ClickAsync();
+
+    await Page.GetByRole(AriaRole.Link, new() { NameRegex = new Regex("View Cart", RegexOptions.IgnoreCase) }).ClickAsync();
+
+    await Expect(Page.Locator(".cart_info")).ToBeVisibleAsync();
+}
 }
