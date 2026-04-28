@@ -91,4 +91,23 @@ public async Task Extra_Search_NonExistingProduct_ReturnsNoResults()
     await Expect(Page.Locator(".features_items .product-image-wrapper"))
         .ToHaveCountAsync(0);
 }
+[Test]
+public async Task TC21_AddReviewOnProduct_Works()
+{
+    await Page.GetByRole(AriaRole.Link, new() { Name = "Products" }).ClickAsync();
+
+    await Expect(Page.GetByText("All Products")).ToBeVisibleAsync();
+
+    await Page.GetByRole(AriaRole.Link, new() { NameRegex = new Regex("View Product", RegexOptions.IgnoreCase) }).First.ClickAsync();
+
+    await Expect(Page.GetByText("Write Your Review", new() { Exact = false })).ToBeVisibleAsync();
+
+    await Page.Locator("#name").FillAsync("Intern Candidate");
+    await Page.Locator("#email").FillAsync(TestDataFactory.UniqueEmail("review"));
+    await Page.Locator("#review").FillAsync("This is an automated product review test.");
+    await Page.Locator("#button-review").ClickAsync();
+
+    await Expect(Page.GetByText("Thank you for your review.", new() { Exact = false }))
+        .ToBeVisibleAsync();
+}
 }
