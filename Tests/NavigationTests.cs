@@ -21,4 +21,40 @@ public async Task TC07_TestCasesPage_OpensSuccessfully()
     await Expect(Page.GetByText("Test Cases", new() { Exact = false }))
         .ToBeVisibleAsync();
 }
+[Test]
+public async Task TC25_VerifyScrollUpUsingArrowButton_Works()
+{
+    await Page.GotoAsync("https://automationexercise.com/");
+    await UiHelpers.CloseConsentAsync(Page);
+
+    await Page.EvaluateAsync("window.scrollTo(0, document.body.scrollHeight)");
+
+    await Expect(Page.GetByText("Subscription", new() { Exact = false }))
+        .ToBeVisibleAsync();
+
+    await Page.Locator("#scrollUp").ClickAsync();
+
+    await Page.WaitForTimeoutAsync(1000);
+
+    var scrollY = await Page.EvaluateAsync<int>("window.scrollY");
+    Assert.That(scrollY, Is.LessThan(300));
+}
+[Test]
+public async Task TC26_VerifyScrollUpWithoutArrowButton_Works()
+{
+    await Page.GotoAsync("https://automationexercise.com/");
+    await UiHelpers.CloseConsentAsync(Page);
+
+    await Page.EvaluateAsync("window.scrollTo(0, document.body.scrollHeight)");
+
+    await Expect(Page.GetByText("Subscription", new() { Exact = false }))
+        .ToBeVisibleAsync();
+
+    await Page.EvaluateAsync("window.scrollTo(0, 0)");
+
+    await Page.WaitForTimeoutAsync(1000);
+
+    var scrollY = await Page.EvaluateAsync<int>("window.scrollY");
+    Assert.That(scrollY, Is.LessThan(300));
+}
 }
