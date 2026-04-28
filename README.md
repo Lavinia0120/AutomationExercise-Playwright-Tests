@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project contains automated UI tests for the AutomationExercise website using Playwright and NUnit.
-The test suite covers authentication, product interactions, cart functionality, checkout process, and UI behavior such as scrolling and dynamic elements.
-This project is a strong starter for the internship brief. The project implements multiple scenarios from the public test-case list and includes additional advanced scenarios for extended coverage, making it a strong solution for the internship assignment.
+This project contains automated UI tests for the AutomationExercise website using Playwright and NUnit.  
+The test suite covers key functionalities such as authentication, product interactions, cart operations, checkout processes, and UI behavior like scrolling and dynamic elements.  
+It implements a selected set of test cases from the public test-case list, along with additional advanced scenarios to improve overall test coverage for the internship assignment.
 
 ## Tech Stack
 - C#
@@ -30,16 +30,16 @@ This project is a strong starter for the internship brief. The project implement
 8. Test Case 13 - Verify Product quantity in Cart
 9. Test Case 17 - Remove Products From Cart
 10. Test Case 18 - View Category Products
-11. Bonus - Test Case 19 - View & Cart Brand Products
-12. Extra - Invalid Login (negative scenario)
-13. Extra - Search for non-existing product (dynamic data using GUID)
-14. Test case 20 – Search products & verify cart after login
-15. Test case 21 – Add review on product
-16. Test case 22 – Add to cart from recommended items
-17. Teste case 23 – Verify address details in checkout page
-18. Test case 24 – Download invoice after purchase order
-19. Test case 25 – Scroll up using arrow button
-20. Test case 26 – Scroll up without arrow button
+11. Test case 20 – Search products & verify cart after login
+12. Test case 21 – Add review on product
+13. Test case 22 – Add to cart from recommended items
+14. Teste case 23 – Verify address details in checkout page
+15. Test case 24 – Download invoice after purchase order
+16. Test case 25 – Scroll up using arrow button
+17. Test case 26 – Scroll up without arrow button
+18. Bonus - Test Case 19 - View & Cart Brand Products
+19. Extra - Invalid Login (negative scenario)
+20. Extra - Search for non-existing product (dynamic data using GUID)
 
 ## Setup
 
