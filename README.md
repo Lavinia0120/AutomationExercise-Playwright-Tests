@@ -8,6 +8,12 @@ This project is a strong starter for the internship brief. It covers **10 existi
 - Microsoft Playwright
 - NUnit
 
+## Project Structure
+- Core – Base test setup (BaseTest)
+- Helpers – Utility methods (e.g. handling cookie consent)
+- TestData – Dynamic test data generation (e.g. GUID emails)
+- Tests – Test classes grouped by functionality
+
 ## Included automated scenarios
 
 1. Test Case 6 - Contact Us Form
