@@ -1,5 +1,10 @@
 # Automation Exercise - Playwright C# Quest Global Internship
 
+## Tech Stack
+- C#
+- .NET 10
+- Microsoft Playwright
+- NUnit
 This project is a strong starter for the internship brief. It covers **10 existing scenarios** from the public test-case list and includes additional bonus scenarios for extended coverage.
 
 ## Included automated scenarios
@@ -42,4 +47,4 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 - Some test scenarios were marked as ignored due to flaky behavior caused by dynamic overlays and sidebar interactions on the demo site.
 Additional scenarios implemented (beyond the required test cases):
 - Invalid login validation (negative test case)
-- Search for non-existing product using dynamic data (GUID)
+- Search for non-existing product using dynamic test data (GUID)
