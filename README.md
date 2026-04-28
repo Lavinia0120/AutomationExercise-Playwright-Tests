@@ -30,14 +30,14 @@ It implements a selected set of test cases from the public test-case list, along
 8. Test Case 13 - Verify Product quantity in Cart
 9. Test Case 17 - Remove Products From Cart
 10. Test Case 18 - View Category Products
-11. Test case 20 – Search products & verify cart after login
-12. Test case 21 – Add review on product
-13. Test case 22 – Add to cart from recommended items
-14. Teste case 23 – Verify address details in checkout page
-15. Test case 24 – Download invoice after purchase order
-16. Test case 25 – Scroll up using arrow button
-17. Test case 26 – Scroll up without arrow button
-18. Bonus - Test Case 19 - View & Cart Brand Products
+11. Bonus - Test Case 19 - View & Cart Brand Products
+12. Test case 20 – Search products & verify cart after login
+13. Test case 21 – Add review on product
+14. Test case 22 – Add to cart from recommended items
+15. Teste case 23 – Verify address details in checkout page
+16. Test case 24 – Download invoice after purchase order
+17. Test case 25 – Scroll up using arrow button
+18. Test case 26 – Scroll up without arrow button
 19. Extra - Invalid Login (negative scenario)
 20. Extra - Search for non-existing product (dynamic data using GUID)
 
