@@ -38,8 +38,8 @@ It implements a selected set of test cases from the public test-case list, along
 16. Test case 24 – Download invoice after purchase order
 17. Test case 25 – Scroll up using arrow button
 18. Test case 26 – Scroll up without arrow button
-
 Additionally, the following extra automated scenarios were implemented as part of the optional requirements:
+
 20. Extra - Invalid Login (negative scenario)
 21. Extra - Search for non-existing product (dynamic data using GUID)
 
