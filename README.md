@@ -1,6 +1,10 @@
 # Automation Exercise - Playwright C# Quest Global Internship
 
-This project is a strong starter for the internship brief. It covers **10 existing scenarios** from the public test-case list and includes additional bonus scenarios for extended coverage.
+## Overview
+
+This project contains automated UI tests for the AutomationExercise website using Playwright and NUnit.
+The test suite covers authentication, product interactions, cart functionality, checkout process, and UI behavior such as scrolling and dynamic elements.
+This project is a strong starter for the internship brief. The project implements multiple scenarios from the public test-case list and includes additional advanced scenarios for extended coverage, making it a strong solution for the internship assignment.
 
 ## Tech Stack
 - C#
@@ -29,6 +33,13 @@ This project is a strong starter for the internship brief. It covers **10 existi
 11. Bonus - Test Case 19 - View & Cart Brand Products
 12. Extra - Invalid Login (negative scenario)
 13. Extra - Search for non-existing product (dynamic data using GUID)
+14. Test case 20 – Search products & verify cart after login
+15. Test case 21 – Add review on product
+16. Test case 22 – Add to cart from recommended items
+17. Teste case 23 – Verify address details in checkout page
+18. Test case 24 – Download invoice after purchase order
+19. Test case 25 – Scroll up using arrow button
+20. Test case 26 – Scroll up without arrow button
 
 ## Setup
 
@@ -52,6 +63,6 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 - If a selector becomes flaky because the website changes, adjust only that locator rather than rewriting the whole test.
 - For the final submission, zip the project folder or push it to a public GitHub repository, as required by the brief.
 - Some test scenarios were marked as ignored due to flaky behavior caused by dynamic overlays and sidebar interactions on the demo site.
-Additional scenarios implemented (beyond the required test cases):
+## Additional Notes
 - Invalid login validation (negative test case)
 - Search for non-existing product using dynamic test data (GUID)
